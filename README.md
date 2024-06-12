@@ -35,3 +35,37 @@ test: $(APP).c test_main.c
 
 clean:
 	rm -f $(TEST_TARGET)
+mem_alloc.c
+The mem_alloc.c file contains the implementation of the dynamic memory allocator. It includes functions for memory allocation, deallocation, and managing the free list.
+
+Key Functions
+mem_alloc: Allocates memory of a requested size.
+mem_free: Frees the allocated memory.
+mem_init: Initializes the memory allocator.
+mem_extend: Extends the free list by allocating more memory pages.
+print_list: Prints the current free list.
+print_header: Prints the details of a given memory block header.
+mem_alloc.h
+The mem_alloc.h file contains the preprocessor directives and type definitions required by the allocator.
+
+Type Definitions
+Header: A struct representing a memory block header.
+Function Declarations
+mem_alloc: Allocates memory of a requested size.
+mem_free: Frees the allocated memory.
+mem_init: Initializes the memory allocator.
+mem_extend: Extends the free list by allocating more memory pages.
+print_list: Prints the current free list.
+print_header: Prints the details of a given memory block header.
+Usage
+Compile the project:
+
+
+make test
+Run the compiled test executable:
+
+./test
+Clean up the build:
+
+make clean
+Author
