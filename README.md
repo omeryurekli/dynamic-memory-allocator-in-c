@@ -57,15 +57,14 @@ mem_init: Initializes the memory allocator.
 mem_extend: Extends the free list by allocating more memory pages.
 print_list: Prints the current free list.
 print_header: Prints the details of a given memory block header.
-Usage
+
+
 Compile the project:
-
-
 make test
+
 Run the compiled test executable:
-
 ./test
-Clean up the build:
 
+Clean up the build:
 make clean
-Author
+
